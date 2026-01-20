@@ -138,3 +138,37 @@
 </body>\
 </html>\
 }
+.note-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+<section>
+  <h2>Open When You Click 💌</h2>
+  <p>Each note hides something I want you to know.</p>
+
+  <div class="note-container">
+
+    <div class="note" onclick="this.classList.toggle('open')">
+      <div class="front">Click me 💗</div>
+      <div class="back">You are my favorite person in the entire world.</div>
+    </div>
+
+    <div class="note" onclick="this.classList.toggle('open')">
+      <div class="front">Open me 🥰</div>
+      <div class="back">I love how you make ordinary days feel special.</div>
+    </div>
+
+    <div class="note" onclick="this.classList.toggle('open')">
+      <div class="front">Tap here 💞</div>
+      <div class="back">No matter what, I’m always on your side.</div>
+    </div>
+
+    <div class="note" onclick="this.classList.toggle('open')">
+      <div class="front">One more 💖</div>
+      <div class="back">You feel like home to me.</div>
+    </div>
+
+  </div>
+</section>
